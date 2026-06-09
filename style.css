@@ -82,6 +82,7 @@
 }
 .img{
     width: 100%;
+
 }
 /*feature wala box start*/
 .features{
@@ -100,6 +101,7 @@
 
 /*2nd hero box start*/
 .container2 {
+    background-color: rgb(236, 232, 228);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +121,7 @@
 
 .hero-img2{
     width: 35%;
-    
+    position:relative;
 }
 .img2{
     width: 100%;
@@ -146,7 +148,7 @@
 
 .hero-img4{
     width: 35%;
-    
+     position: relative;
 }
 .img4{
     width: 100%;
@@ -173,26 +175,107 @@
 
 .hero-img3{
     width: 35%;
-    /* position: relative; */
+    position: relative;
+    display: flex;
 }
 .img3{
     width: 100%;
+    
 }
 
 
-.backpic{
+.backpic1{
     background-color: #007bff;
-    width: 50%;
+    width: 100%;
     height:15rem;
     border-top-left-radius: 9999px;
     border-bottom-left-radius: 9999px;
     position: absolute;
     right: 0;
-    z-index: 1;
+    top: 53%;
+    z-index:-1;
 }
- 
+.backpic2{
+    background-color: #007bff;
+    width: 100%;
+    height: 15rem;
+    position: absolute;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius:9999px ;
+    left: 0; 
+    top: 53%;
+    z-index: 0;
 
+}
+.backpic3{
+    width: 100%;
+    background-color: #007bff;
+    height: 15rem;
+    position: absolute;
+    right: 0;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius:9999px ;
+    /* z-index: -1; */
+    top: 53%;
+}
+.download{
+    width: 100%;
+    background-color: white;
+    padding: 80px 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+}
+.content2{
+    gap: 50px;
+} 
 
+.full-box{
+    width: 100%;
+    background-color: white;
+}
+.box-container{
+    background-color: white;
+    gap: 30px;
+    display: flex;
+    width: 80%;
+    padding: 90px  ;
+}
+.box{
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    min-width: 300px;
+    padding: 15px;
+    text-align: center;
+    gap: 20px;
+}
+h3{
+    color: darkgray;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.asked-box{
+    background-color: rgb(236, 232, 228);
+    padding: 80px 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.asked{
+    width:100% ;
+    gap: 25px;
+}
+.para{
+    width: 50%;
+}
 
 
 
