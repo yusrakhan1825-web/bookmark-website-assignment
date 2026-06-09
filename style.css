@@ -288,19 +288,49 @@ h3{
 
 
 /* mobile ke liay queries */
+
 @media screen and (min-width:0px) and (max-width:480px) {
-    .container1{
+    .head {
+        flex-direction: column; 
+        gap: 15px;                
+    }
+
+    .nav {
+        width: 100%;              
+    }
+
+    .navlinks ul {
+         display: none;
+    }
+    .container1 {
         flex-direction: column-reverse;
-        padding: 20px 30px;
+        gap: 30px;                     
     }
-    .container1 .heading{
-        width: 100%;
-        text-align: center;
+
+    .container1 .heading1 {
+        width: 100%;                   
+        text-align: center;            
+        gap: 20px;                    
     }
-    .hero-section .hero-img .img{
-        width: 60%;
+
+    .hero-img {
+        width: 100%;                 
+        height: auto;                  
+        display: block;              
+        object-fit: cover;
+}
+    .box-container {
+        flex-direction: column;   
+        width: 100%;               
+        align-items: center;       
+    }
+
+    .box {
+        width: 100%;                     
     }
 }
+
+
 /* taplet ke liay queries */
 @media screen and (min-width:481px) and (max-width:768px) {
  .container1{
