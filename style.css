@@ -219,6 +219,8 @@
     /* z-index: -1; */
     top: 53%;
 }
+
+/*download section start*/
 .download{
     width: 100%;
     background-color: white;
@@ -233,7 +235,7 @@
 .download h1{
     padding: 40px;
 }
-
+/*box section start*/
 .full-box{
     width: 100%;
     background-color: white;
@@ -264,7 +266,7 @@ h3{
     color: darkgray;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/*asked box start*/
 .asked-box{
     background-color: rgb(236, 232, 228);
     padding: 80px 40px;
@@ -280,7 +282,7 @@ h3{
 .para{
     width: 50%;
 }
-
+/*feature1 start*/
 .features1{
     width: 100%;
     background-color: rgb(236, 232, 228);
@@ -296,19 +298,17 @@ h3{
     gap: 25px;
 }
 
-
-.faq-container {
+/*arrow container start*/
+.arrow-container {
   width: 500px;
   padding: 40px;
   text-align: center;
 }
-
-details {
+.details {
   border-bottom: 1px solid #eee;
   text-align: left;
 }
-
-summary {
+.arrow-container p {
   list-style: none;
   padding: 20px 0;
   cursor: pointer;
@@ -318,9 +318,7 @@ summary {
   color: #555;
   font-size: 18px;
 }
-
-
-summary .arrow::after {
+.arrow-container p .arrow::after {
   content: '';
   width: 8px;
   height: 8px;
@@ -329,30 +327,11 @@ summary .arrow::after {
   transform: rotate(45deg);
   display: inline-block;
 }
-
-details[open] summary .arrow::after {
-  transform: rotate(-135deg);
-}
-
 .content {
   padding: 10px 0 20px;
   color: #777;
 }
 
-.more-info {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 4px;
-  margin-top: 30px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.more-info:hover {
-  background-color: rgb(43, 43, 121);
-}
 /*container5 start*/
 .container5{
     background-color: #2162a9;
@@ -402,15 +381,158 @@ input{
 }
 
 
-
-
-
-
 /* mobile ke liay queries */
 
-@media screen and (min-width:0px) and (max-width:480px) {
-   
-   
+ @media screen and (min-width:0px) and (max-width: 480px) {
+    .head {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+    .nav {
+        width: 100%;
+    }
+    .navlinks ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .btn {
+        width: 100%;
+        max-width: 250px; 
+        text-align: center;
+    }
+    .container1 {
+        flex-direction: column;
+        padding: 40px 20px; 
+        gap: 30px;         
+    }
+    .container1 .heading1 {
+        width: 100%;
+        text-align: center; 
+        gap: 15px;        
+    }
+    .hero-img {
+        width: 100%;
+        max-width: 350px;
+    }
+    .container2 {
+        flex-direction: column;
+        padding: 50px 20px; 
+        gap: 30px;         
+    }
+    .container2 .heading2 {
+        width: 100%;
+        text-align: center;
+        gap: 15px;         
+    }
+    .hero-img2 {
+        width: 100%;
+        max-width: 350px; 
+    }
+    .container3 {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 30px;       
+    }
+    .container3 .heading3 {
+        width: 100%;
+        text-align: center;
+        gap: 15px;        
+    }
+    .hero-img3 {
+        width: 100%;
+        max-width: 350px;  
+        justify-content: center; 
+    }
+    .download {
+        flex-direction: column;
+        padding: 40px 20px; 
+    }
+    .content2 {
+        padding: 15px;
+    }
+    .download h1 {
+        padding: 15px 0;
+        font-size: 1.8rem;
+    }
+    .full-box {
+        padding: 20px;
+    }
+    .box-container {
+        flex-direction: column;
+        width: 100%;      
+        padding: 20px 0;   
+        gap: 20px;      
+    }
+    .box {
+        min-width: 100%; 
+        gap: 20px;        
+        padding: 20px 15px;
+    }
+    .asked-box {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px; 
+        gap: 20px;       
+    }
+    .asked {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;         
+    }
+    .para {
+        width: 100%;       
+        padding: 0 10px;    
+    }
+    .features1 {
+        padding: 40px 20px; 
+    }
+    .content1 {
+        width: 100%;        
+        gap: 15px;        
+    }
+    .arrow-container {
+        width: 100%;       
+        padding: 20px;    
+    }
+    .arrow-container p {
+        font-size: 16px;
+        padding: 15px 0;  
+    }
+    .content {
+        font-size: 14px;
+        padding: 5px 0 15px;
+    }
+    .container5 {
+        padding: 40px 20px;
+    }
+    input {
+        width: 100%;       
+        padding: 12px;     
+        font-size: 16px;   
+        box-sizing: border-box; 
+    }
+    .container5 h1 {
+        padding: 15px 0;
+        font-size: 1.8rem;
+    }
+    .container5 h3 {
+        padding: 10px 0;
+        font-size: 1.1rem;
+    }
+    .last-container {
+        flex-direction: column;
+        gap: 30px;          
+        padding: 40px 20px; 
+        text-align: center;
+    }
+    .navlinks1 ul {
+        flex-direction: column;
+        gap: 20px;          
+        padding: 10px 0;
+    }
 }
 
 
